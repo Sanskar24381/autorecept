@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --sand: #fbf6ef;
+  --cream: #fff8f1;
+  --stone: #f1e7dc;
+  --ink: #1b140f;
+  --cocoa: #6d4c41;
+  --ember: #d3542c;
+  --olive: #3f5a45;
+  --gold: #f3c66a;
+  --shadow-soft: 0 30px 60px rgba(27, 20, 15, 0.18);
+}
+
+@theme inline {
+  --color-sand: var(--sand);
+  --color-cream: var(--cream);
+  --color-stone: var(--stone);
+  --color-ink: var(--ink);
+  --color-cocoa: var(--cocoa);
+  --color-ember: var(--ember);
+  --color-olive: var(--olive);
+  --color-gold: var(--gold);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgba(211, 84, 44, 0.25);
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+}
