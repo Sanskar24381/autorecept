@@ -166,7 +166,7 @@ export default function Home() {
                     Book a Demo
                   </a>
                   <a
-                    className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-blue hover:text-blue"
+                    className="rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-blue hover:text-blue"
                     href="#how-it-works"
                   >
                     See How It Works
@@ -176,7 +176,7 @@ export default function Home() {
                   {stats.map((stat, index) => (
                     <div
                       key={stat.label}
-                      className="animate-fade-up rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur"
+                      className="animate-fade-up rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur"
                       style={{ animationDelay: `${index * 120}ms` }}
                     >
                       <p className="text-xs uppercase tracking-[0.2em] text-fog">
@@ -191,7 +191,7 @@ export default function Home() {
               </div>
 
               <div className="relative">
-                <div className="absolute -left-6 -top-6 h-full w-full rounded-[32px] border border-white/10 bg-white/5" />
+                <div className="absolute -left-6 -top-6 h-full w-full rounded-[32px] border border-white/10 bg-white/10" />
                 <div className="relative rounded-[32px] border border-white/10 bg-deep/90 p-6 shadow-soft">
                   <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-fog">
                     <span>Live Call</span>
@@ -224,7 +224,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-6 rounded-2xl border border-dashed border-white/20 bg-white/5 px-4 py-3 text-xs text-fog">
+                  <div className="mt-6 rounded-2xl border border-dashed border-white/20 bg-white/10 px-4 py-3 text-xs text-fog">
                     Call summary delivered to your host stand and manager in
                     real time.
                   </div>
@@ -263,7 +263,7 @@ export default function Home() {
               day. With a 30-40% conversion rate, that is 1-2 lost tables daily.
               At $15-$20 per guest, that is $45-$60 every day in missed revenue.
             </p>
-            <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white">
+            <div className="mt-6 rounded-2xl border border-white/10 bg-white/10 p-4 text-sm text-white">
               Auto Recept keeps every call, every guest, every night.
             </div>
           </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 the dining room.
               </p>
               <div className="mt-6 grid gap-4">
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
                   <p className="font-semibold text-white">
                     Answers guest questions on the spot
                   </p>
@@ -313,7 +313,7 @@ export default function Home() {
                     Hours, location, parking, policies, specials, and menu details.
                   </p>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
                   <p className="font-semibold text-white">
                     Books and confirms reservations by text
                   </p>
@@ -321,7 +321,7 @@ export default function Home() {
                     Guests can change or confirm without another call.
                   </p>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
                   <p className="font-semibold text-white">
                     Keeps staff focused on in-person dining
                   </p>
@@ -370,7 +370,7 @@ export default function Home() {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5"
+              className="rounded-2xl border border-white/10 bg-white/10 p-5"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-soft">
                 Step {index + 1}
@@ -396,7 +396,7 @@ export default function Home() {
             {features.map((feature) => (
               <div
                 key={feature}
-                className="rounded-2xl border border-white/10 bg-white/5 p-5"
+                className="rounded-2xl border border-white/10 bg-white/10 p-5"
               >
                 <p className="text-sm font-semibold text-white">{feature}</p>
               </div>
@@ -424,7 +424,7 @@ export default function Home() {
             {benefits.map((benefit) => (
               <div
                 key={benefit}
-                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4"
+                className="rounded-2xl border border-white/10 bg-white/10 px-5 py-4"
               >
                 <p className="text-sm font-semibold text-white">{benefit}</p>
               </div>
@@ -447,7 +447,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft">
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-8 shadow-soft">
               <p className="text-xs uppercase tracking-[0.3em] text-fog">
                 Starter
               </p>
@@ -502,7 +502,7 @@ export default function Home() {
           {useCases.map((useCase) => (
             <div
               key={useCase.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6"
+              className="rounded-3xl border border-white/10 bg-white/10 p-6"
             >
               <h3 className="font-display text-xl">{useCase.title}</h3>
               <p className="mt-2 text-sm text-fog">{useCase.description}</p>
@@ -529,7 +529,7 @@ export default function Home() {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6"
+                className="rounded-3xl border border-white/10 bg-white/10 p-6"
               >
                 <p className="text-sm text-fog">
                   &quot;{testimonial.quote}&quot;
@@ -543,7 +543,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="mt-10 grid gap-3 rounded-3xl border border-white/10 bg-white/5 p-6 sm:grid-cols-3">
+          <div className="mt-10 grid gap-3 rounded-3xl border border-white/10 bg-white/10 p-6 sm:grid-cols-3">
             {logos.map((logo) => (
               <div
                 key={logo}

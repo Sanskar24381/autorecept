@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --midnight: #000f27;
-  --deep: #111827;
-  --slate: #1f2937;
-  --steel: #374151;
-  --fog: #94a3b8;
-  --ice: #e5e7eb;
+  --midnight: #0b1220;
+  --deep: #0f172a;
+  --slate: #111827;
+  --steel: #1f2937;
+  --fog: #cbd5e1;
+  --ice: #e2e8f0;
   --snow: #f8fafc;
   --white: #ffffff;
   --blue: #4785ff;
@@ -41,7 +41,7 @@ html {
 
 body {
   background: var(--midnight);
-  color: var(--white);
+  color: var(--ice);
   font-family: var(--font-body);
 }
 
