@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const display = Space_Grotesk({
   variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
 });
 
-const manrope = Manrope({
+const body = DM_Sans({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${manrope.variable} antialiased`}>
+      <body className={`${display.variable} ${body.variable} antialiased`}>
         {children}
       </body>
     </html>

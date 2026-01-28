@@ -1,25 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --sand: #fbf6ef;
-  --cream: #fff8f1;
-  --stone: #f1e7dc;
-  --ink: #1b140f;
-  --cocoa: #6d4c41;
-  --ember: #d3542c;
-  --olive: #3f5a45;
-  --gold: #f3c66a;
-  --shadow-soft: 0 30px 60px rgba(27, 20, 15, 0.18);
+  --midnight: #000f27;
+  --deep: #111827;
+  --slate: #1f2937;
+  --steel: #374151;
+  --fog: #94a3b8;
+  --ice: #e5e7eb;
+  --snow: #f8fafc;
+  --white: #ffffff;
+  --blue: #4785ff;
+  --blue-soft: #6b9eff;
+  --cyan: #0891b2;
+  --violet: #6366f1;
+  --green: #22c55e;
+  --gold: #facc15;
+  --shadow-soft: 0 30px 70px rgba(0, 15, 39, 0.45);
 }
 
 @theme inline {
-  --color-sand: var(--sand);
-  --color-cream: var(--cream);
-  --color-stone: var(--stone);
-  --color-ink: var(--ink);
-  --color-cocoa: var(--cocoa);
-  --color-ember: var(--ember);
-  --color-olive: var(--olive);
+  --color-midnight: var(--midnight);
+  --color-deep: var(--deep);
+  --color-slate: var(--slate);
+  --color-steel: var(--steel);
+  --color-fog: var(--fog);
+  --color-ice: var(--ice);
+  --color-snow: var(--snow);
+  --color-white: var(--white);
+  --color-blue: var(--blue);
+  --color-blue-soft: var(--blue-soft);
+  --color-cyan: var(--cyan);
+  --color-violet: var(--violet);
+  --color-green: var(--green);
   --color-gold: var(--gold);
 }
 
@@ -28,13 +40,36 @@ html {
 }
 
 body {
-  background: var(--sand);
-  color: var(--ink);
+  background: var(--midnight);
+  color: var(--white);
   font-family: var(--font-body);
 }
 
 ::selection {
-  background: rgba(211, 84, 44, 0.25);
+  background: rgba(71, 133, 255, 0.35);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @layer utilities {
@@ -44,5 +79,13 @@ body {
 
   .shadow-soft {
     box-shadow: var(--shadow-soft);
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out both;
+  }
+
+  .animate-float {
+    animation: float-slow 6s ease-in-out infinite;
   }
 }
